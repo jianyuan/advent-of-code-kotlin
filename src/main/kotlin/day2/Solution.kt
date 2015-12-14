@@ -16,9 +16,9 @@ fun main(args: Array<String>) {
             }
             .map {
                 Box(
-                        length = it[1]!!.value.toInt(),
-                        width = it[2]!!.value.toInt(),
-                        height = it[3]!!.value.toInt()
+                        length = it[1]?.value?.toInt() ?: 0,
+                        width = it[2]?.value?.toInt() ?: 0,
+                        height = it[3]?.value?.toInt() ?: 0
                 )
             }
 
